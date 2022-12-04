@@ -1,4 +1,5 @@
 import os
+from datetime import date
 
 from aocd import get_data
 
@@ -13,4 +14,4 @@ def get_advent_of_code_file_of_day(day, year=2022):
 
 
 if __name__ == '__main__':
-    get_advent_of_code_file_of_day(2)
+    get_advent_of_code_file_of_day(date.today().day)
