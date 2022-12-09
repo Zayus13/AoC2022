@@ -7,6 +7,6 @@ def find_first_distinct_char_subset(s, length=4):
 if __name__ == '__main__':
     with open("day06.txt", "r") as f:
         data = f.readlines()
-        res = sum([find_first_distinct_char_subset(line) for line in data])
-        res = sum([find_first_distinct_char_subset(line, 14) for line in data])
-        print(res)
+        res1 = sum([find_first_distinct_char_subset(line) for line in data])
+        res2 = sum([find_first_distinct_char_subset(line, 14) for line in data])
+        print(res1, res2)
